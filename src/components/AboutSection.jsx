@@ -46,18 +46,28 @@ const TAB_DATA = [
     title: "Achievements",
     id: "achievements",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Presidents list at Tooele Tech (3 months)</li>
-        <li>Presidents list at Tooele Tech (6 months)</li>
-        <li>Excellence Award from Tooele Tech</li>
-        <li>Business & Information Technology Student of the Year 2024</li>
-      </ul>
+      <div className="flex flex-col">
+        <ul className="list-disc pl-2">
+          <li>Presidents list at Tooele Tech (3 months)</li>
+          <li>Presidents list at Tooele Tech (6 months)</li>
+          <li>Excellence Award from Tooele Tech</li>
+          <li>Business & Information Technology Student of the Year 2024</li>
+        </ul>
+        <iframe
+          className="mt-2 rounded-lg self-center h-[315px] w-[500px]"
+          src="https://www.youtube.com/embed/QBOb7IRD3GY?si=cGs5v71wjCYjZMFe"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
     ),
   },
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("achievements");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -68,7 +78,7 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="text-white">
-      <div className="md:grid grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="md:grid grid-cols-2 gap-8 items-center py-8 px-4 md:gap-16 sm:py-16 xl:px-16">
         <div className="flex items-center justify-center mt-20">
           <Image
             className="rounded-[40px] blur-lg absolute xl:scale-100 lg:scale-95 md:scale-[.68] scale-[0.85]"
@@ -85,7 +95,7 @@ const AboutSection = () => {
             height={400}
           />
         </div>
-        <div className="mt-4 md:mt-0 text-left flex-col h-full">
+        <div className="mt-10 md:mt-0 text-left flex-col h-full">
           <h2 className="text=4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             I&apos;m 30 years old and have a genuine passion for software

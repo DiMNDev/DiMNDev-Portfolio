@@ -15,9 +15,13 @@ const Footer = () => {
           />
           <span className="absolute -bottom-1 font-extrabold">DiMNDev</span>
         </div>
-        <p className="text-slate-700 text-center self center">
-          All Rights Reserved
-        </p>
+
+        <div className="text-slate-700 text-center self center">
+          DiMND Development - All Rights Reserved
+          <p className="text-slate-700">
+            &quot;Diamonds are made under heat and pressure&quot;
+          </p>
+        </div>
       </div>
     </footer>
   );
