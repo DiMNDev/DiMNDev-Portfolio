@@ -7,12 +7,14 @@ const Footer = () => {
     <footer className="footer border border-t-[#33353f] border-l-transparent border-b-transparent border-r-transparent text-white">
       <div className=" p-12 flex justify-between">
         <div className="h-24px w-24px  relative">
-          <Image
-            src={dimndPortrait}
-            alt="DiMNDev Logo"
-            width={64}
-            height={64}
-          />
+          <a href="#">
+            <Image
+              src={dimndPortrait}
+              alt="DiMNDev Logo"
+              width={64}
+              height={64}
+            />
+          </a>
           <span className="absolute -bottom-1 font-extrabold">DiMNDev</span>
         </div>
 
