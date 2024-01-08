@@ -36,9 +36,9 @@ const projectData = [
     title: "poemsPoets",
     description: "Social, Puzzle",
     imgUrl: [
-      "/images/Project_Screenshots/poemsPoets-m-01.png",
-      "/images/Project_Screenshots/poemsPoets-m-02.png",
-      "/images/Project_Screenshots/poemsPoets-m-03.png",
+      "/images/Project_Screenshots/poemsPoets-m01.png",
+      "/images/Project_Screenshots/poemsPoets-m02.png",
+      "/images/Project_Screenshots/poemsPoets-m03.png",
     ],
     gitURL: "https://github.com/DiMNDev/poemsPoets",
     previewURL: "#",
