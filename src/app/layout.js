@@ -7,6 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Joshua Arnold",
   description: "A NextJS Portfolio",
+  icons: {
+    icon: "/icon.png",
+    favicon: "/icon/png",
+  },
 };
 
 export default function RootLayout({ children }) {
