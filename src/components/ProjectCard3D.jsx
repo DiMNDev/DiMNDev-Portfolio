@@ -107,6 +107,8 @@ const ProjectCard = ({
         <div id="right" className="flex">
           <Link
             href={gitURL}
+            target="_blank"
+            rel="noopener noreferrer"
             className={
               gitURL == "#"
                 ? "h-14 w-14 border-2 relative mr-2 rounded-full border-[#7b7f82] cursor-not-allowed group/link"
@@ -123,6 +125,8 @@ const ProjectCard = ({
           </Link>
           <Link
             href={previewURL}
+            target="_blank"
+            rel="noopener noreferrer"
             className={
               previewURL == "#"
                 ? "h-14 w-14 border-2 relative mr-2 rounded-full border-[#7b7f82] cursor-not-allowed"
