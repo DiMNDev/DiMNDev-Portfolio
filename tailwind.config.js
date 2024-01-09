@@ -2,6 +2,7 @@
 const colors = require("tailwindcss/colors");
 // const poemPurple = require("./purplePoemText");
 const newDim = require("./newDimensions");
+const animations = require("./animations");
 module.exports = {
   content: [
     // "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -24,5 +25,5 @@ module.exports = {
       poemPurple: "#500b67",
     },
   },
-  plugins: [newDim],
+  plugins: [newDim, animations],
 };
