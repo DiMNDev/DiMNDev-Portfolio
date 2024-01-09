@@ -6,8 +6,10 @@ import linkdInLogo from "../../public/images/logo-linkedin.svg";
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [statusMsg, setStatusMsg] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatusMsg("Sending...");
     const data = {
       email: e.target.email.value,
       subject: e.target.subject.value,
@@ -32,7 +34,14 @@ const EmailSection = () => {
 
     if (response.status === 200) {
       console.log("Message sent.");
+      setStatusMsg("Message sent!");
       setEmailSubmitted(true);
+      setTimeout(() => {
+        setStatusMsg("");
+        e.target.email.value = "";
+        e.target.subject.value = "";
+        e.target.message.value = "";
+      }, 8000);
     }
   };
   return (
@@ -48,7 +57,7 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          I&apos;m currently looking for new opportunities to connect with new
+          I&apos;m currently looking for opportunities to connect with new
           people. I&apos;m open to contract work, fulltime employment, to answer
           questions and/or engage in conversation.
         </p>
@@ -139,7 +148,13 @@ const EmailSection = () => {
         >
           Send Message
         </button>
-        {emailSubmitted && <p className="text-green-600">Message Sent!</p>}
+        <p
+          className={
+            statusMsg == "Message sent!" ? "text-green-600" : "text-blue-600"
+          }
+        >
+          {statusMsg}
+        </p>
       </form>
     </section>
   );
