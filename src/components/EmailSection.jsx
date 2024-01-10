@@ -62,7 +62,7 @@ const EmailSection = () => {
           questions and/or engage in conversation.
         </p>
         <div className="socials flex flex-row gap-2">
-          <a href="https://github.com/DiMNDev">
+          <a href="https://github.com/DiMNDev" target="_blank">
             {/* GitHub SVG Icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ const EmailSection = () => {
             </svg>
             {/* <Image src={gitHubLogo} alt="Github Icon" width={24} height={24} /> */}
           </a>
-          <a href="https://www.linkedin.com/in/dimndev/">
+          <a href="https://www.linkedin.com/in/dimndev/" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="group/linkdIcon hover:border-2 hover:border-white rounded-md transition-all"
