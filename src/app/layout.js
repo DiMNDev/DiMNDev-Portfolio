@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Joshua Arnold",
   description: "A NextJS Portfolio",
+  opengraph: {
+    url: "https://www.dimndev.com/",
+  },
 };
 
 export default function RootLayout({ children }) {
