@@ -5,10 +5,15 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  metadataBase: process.env.NEXT_PUBLIC_METADATA_BASE_URL,
   title: "Joshua Arnold",
   description: "A NextJS Portfolio",
-  opengraph: {
-    url: "https://www.dimndev.com/",
+  icons: {
+    apple: process.env.NEXT_PUBLIC_METADATA_BASE_URL + "api/og",
+  },
+  openGraph: {
+    images: [{ url: "api/og" }],
+    url: "/",
   },
 };
 
