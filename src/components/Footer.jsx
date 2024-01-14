@@ -1,20 +1,21 @@
 import React from "react";
 import Image from "next/image";
 import dimndPortrait from "../../public/images/DiMNDev-portrait-1mb.png";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer className="footer border border-t-[#33353f] border-l-transparent border-b-transparent border-r-transparent text-white">
       <div className=" p-12 flex justify-between">
         <div className="h-24px w-24px  relative">
-          <a href="#">
+          <Link href="#home" scroll={true}>
             <Image
               src={dimndPortrait}
               alt="DiMNDev Logo"
               width={64}
               height={64}
             />
-          </a>
+          </Link>
           <span className="absolute -bottom-1 font-extrabold">DiMNDev</span>
         </div>
 
