@@ -1,16 +1,13 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
-import gitHubLogo from "../../public/images/logo-github.svg";
-import linkdInLogo from "../../public/images/logo-linkedin.svg";
 
 const EmailSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [statusMsg, setStatusMsg] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatusMsg("Sending...");
     const data = {
+      firstName: e.target.firstName.value,
       email: e.target.email.value,
       subject: e.target.subject.value,
       message: e.target.message.value,
@@ -33,11 +30,10 @@ const EmailSection = () => {
     console.log(response.status);
 
     if (response.status === 200) {
-      console.log("Message sent.");
       setStatusMsg("Message sent!");
-      setEmailSubmitted(true);
       setTimeout(() => {
         setStatusMsg("");
+        e.target.firstName.value = "";
         e.target.email.value = "";
         e.target.subject.value = "";
         e.target.message.value = "";
@@ -95,8 +91,24 @@ const EmailSection = () => {
           </a>
         </div>
       </div>
-      <form className="flex flex-col gap-6 z-20" onSubmit={handleSubmit}>
-        <div>
+      <form className="flex flex-col gap-4 z-20" onSubmit={handleSubmit}>
+        <div className="mb-4">
+          <label
+            htmlFor="firstName"
+            className="text-white block mb-2 text-sm font-meduim"
+          >
+            First name
+          </label>
+          <input
+            className="bg-[#18191E] border-[#33353f] placeholder-[#9ca2a9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+            type="text"
+            id="firstName"
+            name="firstName"
+            required
+            placeholder="First name"
+          />
+        </div>
+        <div className="mb-6">
           <label
             htmlFor="email"
             className="text-white block mb-2 text-sm font-meduim"

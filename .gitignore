@@ -21,6 +21,7 @@ scratch.js
 # misc
 .DS_Store
 *.pem
+misc
 
 # debug
 npm-debug.log*
