@@ -28,7 +28,7 @@ const projectData = [
       "/images/Project_Screenshots/poemsPoets-03.png",
     ],
     gitURL: "https://github.com/DiMNDev/poemsPoets",
-    previewURL: "#",
+    previewURL: "https://www.poemspoets.com",
     tag: ["All", "Web"],
   },
   {
