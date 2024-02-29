@@ -50,6 +50,7 @@ const TAB_DATA = [
         <ul className="list-disc pl-2">
           <li>Presidents list at Tooele Tech (3 months)</li>
           <li>Presidents list at Tooele Tech (6 months)</li>
+          <li>Presidents list at Tooele Tech (9 months)</li>
           <li>Excellence Award from Tooele Tech</li>
           <li>Business & Information Technology Student of the Year 2024</li>
         </ul>
@@ -57,7 +58,6 @@ const TAB_DATA = [
           className="mt-2 rounded-lg self-center h-[315px] w-[500px]"
           src="https://www.youtube.com/embed/QBOb7IRD3GY?si=cGs5v71wjCYjZMFe"
           title="YouTube video player"
-          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
