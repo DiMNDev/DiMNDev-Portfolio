@@ -105,42 +105,66 @@ const ProjectCard = ({
           <p className="text-[#adb7be]">{description}</p>
         </div>
         <div id="right" className="flex">
-          <Link
-            href={gitURL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={
-              gitURL == "#"
-                ? "h-14 w-14 border-2 relative mr-2 rounded-full border-[#7b7f82] cursor-not-allowed group/link"
-                : "h-14 w-14 border-2 relative mr-2 rounded-full border-[#adb7be] hover:border-purple-500 group/link transition-all"
-            }
-          >
-            <CodeBracketIcon
+          {gitURL == "#" ? (
+            <div className="h-14 w-14 border-2 relative mr-2 rounded-full border-[#7b7f82] cursor-not-allowed group/link">
+              <CodeBracketIcon
+                className={
+                  gitURL == "#"
+                    ? "h-10 w-10 text-[#adb7be] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-not-allowed"
+                    : "h-10 w-10 text-[#adb7be] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white transition-all"
+                }
+              />
+            </div>
+          ) : (
+            <Link
+              href={gitURL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={
                 gitURL == "#"
-                  ? "h-10 w-10 text-[#adb7be] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-not-allowed"
-                  : "h-10 w-10 text-[#adb7be] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white transition-all"
+                  ? "h-14 w-14 border-2 relative mr-2 rounded-full border-[#7b7f82] cursor-not-allowed group/link"
+                  : "h-14 w-14 border-2 relative mr-2 rounded-full border-[#adb7be] hover:border-purple-500 group/link transition-all"
               }
-            />
-          </Link>
-          <Link
-            href={previewURL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={
-              previewURL == "#"
-                ? "h-14 w-14 border-2 relative mr-2 rounded-full border-[#7b7f82] cursor-not-allowed"
-                : "h-14 w-14 border-2 relative mr-2 rounded-full border-[#adb7be] hover:border-purple-500 group/link transition-all"
-            }
-          >
-            <EyeIcon
+            >
+              <CodeBracketIcon
+                className={
+                  gitURL == "#"
+                    ? "h-10 w-10 text-[#adb7be] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-not-allowed"
+                    : "h-10 w-10 text-[#adb7be] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white transition-all"
+                }
+              />
+            </Link>
+          )}
+          {previewURL == "#" ? (
+            <div className="h-14 w-14 border-2 relative mr-2 rounded-full border-[#7b7f82] cursor-not-allowed group/link">
+              <EyeIcon
+                className={
+                  previewURL == "#"
+                    ? "h-10 w-10 text-[#adb7be] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-not-allowed"
+                    : "h-10 w-10 text-[#adb7be] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white transition-all"
+                }
+              />
+            </div>
+          ) : (
+            <Link
+              href={previewURL}
+              target="_blank"
+              rel="noopener noreferrer"
               className={
                 previewURL == "#"
-                  ? "h-10 w-10 text-[#adb7be] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-not-allowed"
-                  : "h-10 w-10 text-[#adb7be] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white transition-all"
+                  ? "h-14 w-14 border-2 relative mr-2 rounded-full border-[#7b7f82] cursor-not-allowed"
+                  : "h-14 w-14 border-2 relative mr-2 rounded-full border-[#adb7be] hover:border-purple-500 group/link transition-all"
               }
-            />
-          </Link>
+            >
+              <EyeIcon
+                className={
+                  previewURL == "#"
+                    ? "h-10 w-10 text-[#adb7be] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-not-allowed"
+                    : "h-10 w-10 text-[#adb7be] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white transition-all"
+                }
+              />
+            </Link>
+          )}
         </div>
       </div>
     </div>

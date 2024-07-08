@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import ProjectCard3D from "./ProjectCard3D";
 import ProjectTag from "./ProjectTag";
-// import projectScreenshots from "../../public/images/Project Screenshots";
 
 const projectData = [
   {
@@ -27,7 +26,7 @@ const projectData = [
       "/images/Project_Screenshots/poemsPoets-02.png",
       "/images/Project_Screenshots/poemsPoets-03.png",
     ],
-    gitURL: "https://github.com/DiMNDev/poemsPoets",
+    gitURL: "#",
     previewURL: "https://www.poemspoets.com",
     tag: ["All", "Web"],
   },
@@ -40,7 +39,7 @@ const projectData = [
       "/images/Project_Screenshots/poemsPoets-m02.png",
       "/images/Project_Screenshots/poemsPoets-m03.png",
     ],
-    gitURL: "https://github.com/DiMNDev/poemsPoets",
+    gitURL: "#",
     previewURL: "#",
     tag: ["All", "Mobile"],
   },
