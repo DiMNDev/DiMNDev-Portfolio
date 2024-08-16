@@ -17,6 +17,13 @@ const TAB_DATA = [
         <li>React</li>
         <li>Next.js</li>
         <li>Tailwind</li>
+        <li>Python</li>
+        <li>React Native</li>
+        <li>Swift</li>
+        <li>SwiftUI</li>
+        <li>MongoDB</li>
+        <li>PostgreSQL</li>
+        <li>Docker</li>
       </ul>
     ),
   },
@@ -51,6 +58,7 @@ const TAB_DATA = [
           <li>Presidents list at Tooele Tech (3 months)</li>
           <li>Presidents list at Tooele Tech (6 months)</li>
           <li>Presidents list at Tooele Tech (9 months)</li>
+          <li>Presidents list at Tooele Tech (12 months)</li>
           <li>Excellence Award from Tooele Tech</li>
           <li>Business & Information Technology Student of the Year 2024</li>
         </ul>
@@ -98,7 +106,7 @@ const AboutSection = () => {
         <div className="mt-10 md:mt-0 text-left flex-col h-full">
           <h2 className="text=4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I&apos;m 30 years old and have a genuine passion for software
+            I&apos;m 31 years old and have a genuine passion for software
             development. I have the{" "}
             <span className="before:block before:absolute before:-inset-0.5 before:skew-y-1 hover:before:-skew-y-1 before:bg-gradient-to-r from-poemPurple to-purple-800 relative inline-block before:transition-all cursor-default before:rounded-md">
               <span className="font-black tracking-wider drop-shadow-lg relative">
