@@ -5,16 +5,29 @@ import ProjectTag from "./ProjectTag";
 
 const projectData = [
   {
-    id: 1,
-    title: "deskDecor",
-    description: "E-commerce, stripe integration",
+    id: 0,
+    title: "Daughters of Utah Pioneers",
+    description: "Museum, non-profit organization",
     imgUrl: [
-      "/images/Project_Screenshots/deskDecor-01.png",
-      "/images/Project_Screenshots/deskDecor-02.png",
-      "/images/Project_Screenshots/deskDecor-03.png",
+      "/images/Project_Screenshots/dup-01.png",
+      "/images/Project_Screenshots/dup-02.png",
+      "/images/Project_Screenshots/dup-03.png",
     ],
-    gitURL: "https://github.com/DiMNDev/deskDecor-fullStack",
-    previewURL: "#",
+    gitURL: "#",
+    previewURL: "https://www.duptooeleco.org",
+    tag: ["All", "Web"],
+  },
+  {
+    id: 1,
+    title: "Caro Construction Group",
+    description: "handyman, business",
+    imgUrl: [
+      "/images/Project_Screenshots/caro-01.png",
+      "/images/Project_Screenshots/caro-02.png",
+      "/images/Project_Screenshots/caro-03.png",
+    ],
+    gitURL: "#",
+    previewURL: "https://www.caroconstructiongroup.com",
     tag: ["All", "Web"],
   },
   {
@@ -45,19 +58,6 @@ const projectData = [
   },
   {
     id: 4,
-    title: "Stickman",
-    description: "Mobile Platformer",
-    imgUrl: [
-      "/images/resized_project_screenshots/stickman-01.webp",
-      "/images/resized_project_screenshots/stickman-02.webp",
-      "/images/resized_project_screenshots/stickman-03.webp",
-    ],
-    gitURL: "https://github.com/DiMNDev/theAdventuresOfStickman",
-    previewURL: "#",
-    tag: ["All", "Mobile"],
-  },
-  {
-    id: 5,
     title: "Our Favorite Books",
     description: "Book Social Network",
     imgUrl: [
@@ -68,6 +68,32 @@ const projectData = [
     gitURL: "https://github.com/DiMNDev/favoriteBookUI",
     previewURL: "https://dimndev.github.io/favoriteBookUI/",
     tag: ["All", "Web"],
+  },
+  {
+    id: 5,
+    title: "deskDecor",
+    description: "E-commerce, stripe integration",
+    imgUrl: [
+      "/images/Project_Screenshots/deskDecor-01.png",
+      "/images/Project_Screenshots/deskDecor-02.png",
+      "/images/Project_Screenshots/deskDecor-03.png",
+    ],
+    gitURL: "https://github.com/DiMNDev/deskDecor-fullStack",
+    previewURL: "#",
+    tag: ["All", "Web"],
+  },
+  {
+    id: 6,
+    title: "Stickman",
+    description: "Mobile Platformer",
+    imgUrl: [
+      "/images/resized_project_screenshots/stickman-01.webp",
+      "/images/resized_project_screenshots/stickman-02.webp",
+      "/images/resized_project_screenshots/stickman-03.webp",
+    ],
+    gitURL: "https://github.com/DiMNDev/theAdventuresOfStickman",
+    previewURL: "#",
+    tag: ["All", "Mobile"],
   },
 ];
 
